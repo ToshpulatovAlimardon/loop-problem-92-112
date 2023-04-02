@@ -1,18 +1,26 @@
-// problem_92 ???
-// let n = 1.5,
-//     s = 1;
-// for (let i = 1.1; i <= n; i += 0.1) {
-//     s *= i;
-// }
-// console.log(s);
-
-// problem_93 ???
-// let n = 10,
-//     s = 0;
+// problem_92
+// let n = 30;
+// let result = 1;
 // for (let i = 1; i <= n; i++) {
-//     s += -1 * Math.pow(-1, i) * (1 + i / 10);
+//     if (i > 9 && i < 99) {
+//         result *= 1 + i / 100;
+//     } else {
+//         result *= 1 + i / 10;
+//     }
 // }
-// console.log(s);
+// console.log(result);
+
+// problem_93
+// let n = 10;
+// let result = 0;
+// for (let i = 1; i <= n; i++) {
+//     if (i > 9 && i < 99) {
+//         result += -1 * Math.pow(-1, i) * (1 + i / 100);
+//     } else {
+//         result += -1 * Math.pow(-1, i) * (1 + i / 10);
+//     }
+// }
+// console.log(result);
 
 // problem_94
 // let n = 8,
@@ -63,7 +71,6 @@
 //     masked += str.slice(-4);
 //     return masked;
 // }
-
 // let inputString = "5j3b6bk2435k";
 // let result = maskString(inputString);
 // console.log(result);
@@ -73,7 +80,6 @@
 //     const odd = array.filter((x) => x % 2).sort((a, b) => a - b);
 //     return array.map((x) => (x % 2 ? odd.shift() : x));
 // }
-
 // let inputArray = [5, 3, 2, 8, 1, 4];
 // let result = sortArray(inputArray);
 // console.log(result);
@@ -104,7 +110,6 @@
 // problem_103
 // let a = [10, 12];
 // let n = 5;
-
 // a.forEach(function(element) {
 //     console.log(element * n);
 // });
@@ -114,7 +119,6 @@
 // let evenNumbers = a.filter(function (number) {
 //     return number % 2 === 0;
 // });
-
 // console.log(evenNumbers);
 
 // problem_105
@@ -157,3 +161,22 @@
 // const a = [1, 2, 10, 15, -4];
 // const n = 4;
 // console.log(findFirstGreater(a, n));
+
+// problem_111
+// let n = 5;
+// let v = 0;
+// let arr = new Array(n);
+// arr.fill(v);
+// console.log(arr);
+
+// problem_112
+// let p0 = 1000;
+// let percent = 2;
+// let aug = 50;
+// let p = 1200;
+// let years = 0;
+// while (p0 < p) {
+//   p0 += p0 * (percent / 100) + aug;
+//   years++;
+// }
+// console.log(years);
